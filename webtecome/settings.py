@@ -25,7 +25,7 @@ SECRET_KEY = 'p0*4)7)0!moy8a=q-@340)4qri-9d$khu1w5brotzq0!o1mn@7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+STATIC_URL = True
 ALLOWED_HOSTS = []
 
 
@@ -123,9 +123,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 STATIC_URL = '/static/'
 
 # STATIC_ROOT = BASE_DIR /'static'
-SATIC_ROOT = os.path.join(BASE_DIR, 'static')
-assert os.path.exists(SATIC_ROOT)
-STATICFILES_DIR = [
-    'webtecome/static',
-    # SATIC_ROOT
-]
+# SATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# assert os.path.exists(SATIC_ROOT)
+# STATICFILES_DIR = [
+#     'webtecome/static',
+#     # SATIC_ROOT
+# ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
