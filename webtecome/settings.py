@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'category',
     'accounts',
+
+
 ]
 
 MIDDLEWARE = [
@@ -73,6 +75,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'webtecome.wsgi.application'
 
 AUTH_USER_MODEL ='accounts.Account'
+
+# SESSION_COOKIE_DOMAIN ='localhost'
+
+# DJANGO_SETTINGS_MODULE = 'serverless_django.settings.local_proxy'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
